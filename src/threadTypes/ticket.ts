@@ -1,6 +1,6 @@
 import { Client, Message, MessageEmbed, TextChannel } from "discord.js";
 
-export async function createFeatureRequest(client: Client, message: Message, to: string) {
+export async function createTicket(client: Client, message: Message, to: string) {
     const title = message.content.toString().slice(0, 28) + "...";
     const content = message.content;
     const authorText = `${message.author.username}#${message.author.discriminator}`;
