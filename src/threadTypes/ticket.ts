@@ -1,10 +1,11 @@
 import { Client, Message, MessageEmbed, TextChannel } from "discord.js";
 
 export async function createTicket(client: Client, message: Message, to: string) {
-    const title = message.content.toString().slice(0, 28) + "...";
+    const title = message.content.toString().slice(0, 8);
     const content = message.content;
     const authorText = `${message.author.username}#${message.author.discriminator}`;
     const author = `<@!${message.author.id}>`;
+    const role = `<@926948590402822146>`
     await message.delete();
 
     const channel = client.channels.cache.get(to) as TextChannel;
