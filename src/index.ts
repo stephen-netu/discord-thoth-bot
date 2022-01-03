@@ -8,7 +8,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 const supportTicketChannels = {
     from: "860655061460582460",
-    to: "826265807210283037",
+    to: "926957014100344922",
 };
 
 client.on("ready", () => {
