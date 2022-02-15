@@ -19,6 +19,6 @@ export async function createTicket(client: Client, message: Message, to: string)
         },
     });
 
-    const newMessage = await channel.send({ embeds: [embed], content: `${author}` });
+    const newMessage = await channel.send({ embeds: [embed], content: `<@943289706957918218>` });
     newMessage.startThread({ name: title, rateLimitPerUser: 0, reason: `New Idea Submission` });
 }
